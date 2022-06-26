@@ -5,7 +5,7 @@ using UnityEngine;
 public class PathControl : MonoBehaviour
 {
     SpriteRenderer m_SpriteRenderer;
-    //The Color to be assigned to the Renderer’s Material
+    //The Color to be assigned to the Rendererï¿½s Material
     Color m_NewColor;
 
     //These are the values that the Color Sliders return
@@ -21,7 +21,7 @@ public class PathControl : MonoBehaviour
 
     void Update()
     {
-        float i = (float)0.1;
+        float i = 0.1f;
         while (i < 1)
         {
             m_Red = i;
@@ -36,10 +36,10 @@ public class PathControl : MonoBehaviour
             //Set the SpriteRenderer to the Color defined by the index
             m_SpriteRenderer.color = m_NewColor;
 
-            i += (float)(0.01);
+            i += 0.01f;
             if (i == 1)
             {
-                i = (float)0.1;
+                i = 0.1f;
             }
         }
 
